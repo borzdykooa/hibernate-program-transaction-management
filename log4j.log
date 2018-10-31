@@ -1,0 +1,27 @@
+2018-10-31 11:59:40,341 INFO  - HHH000412: Hibernate Core {5.2.16.Final}
+2018-10-31 11:59:40,343 INFO  - HHH000206: hibernate.properties not found
+2018-10-31 11:59:40,558 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-31 11:59:40,663 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-10-31 11:59:40,669 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/hibernate_program_transaction_manager]
+2018-10-31 11:59:40,670 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2018-10-31 11:59:40,670 INFO  - HHH10001003: Autocommit mode: false
+2018-10-31 11:59:40,673 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-10-31 11:59:40,786 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2018-10-31 11:59:40,956 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-10-31 11:59:40,960 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7bd4937b
+2018-10-31 11:59:41,541 INFO  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@fd0e5b6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2018-10-31 11:59:41,578 INFO  - Method save is called in TrainerDao
+2018-10-31 11:59:41,656 INFO  - Trainer(id=1, name=Andrei Reut, language=Java, experience=6) has been saved successfully!
+2018-10-31 11:59:41,658 INFO  - Method save is called in TrainerDao
+2018-10-31 11:59:41,659 INFO  - Trainer(id=2, name=Ivan Ishchenko, language=Java, experience=6) has been saved successfully!
+2018-10-31 11:59:41,660 INFO  - Method find is called in TrainerDao
+2018-10-31 11:59:41,671 INFO  - Trainer(id=1, name=Andrei Reut, language=Java, experience=6) has been found
+2018-10-31 11:59:41,671 INFO  - Method find is called in TrainerDao
+2018-10-31 11:59:41,672 INFO  - Trainer(id=2, name=Ivan Ishchenko, language=Java, experience=6) has been found
+2018-10-31 11:59:41,673 INFO  - Method save is called in TraineeDao
+2018-10-31 11:59:41,676 INFO  - Trainee(id=1, name=Olga Borzdyko, trainer=Trainer(id=2, name=Ivan Ishchenko, language=Java, experience=6)) has been saved successfully!
+2018-10-31 11:59:41,676 INFO  - Method save is called in TraineeDao
+2018-10-31 11:59:41,678 INFO  - Trainee(id=2, name=Denis Byhovsky, trainer=Trainer(id=1, name=Andrei Reut, language=Java, experience=6)) has been saved successfully!
+2018-10-31 11:59:41,678 INFO  - Method findAll is called in TraineeDao
+2018-10-31 11:59:41,706 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2018-10-31 11:59:41,797 INFO  - List of Trainees: [Trainee(id=1, name=Olga Borzdyko, trainer=Trainer(id=2, name=Ivan Ishchenko, language=Java, experience=6)), Trainee(id=2, name=Denis Byhovsky, trainer=Trainer(id=1, name=Andrei Reut, language=Java, experience=6))]
